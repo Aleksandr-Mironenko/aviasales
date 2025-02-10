@@ -1,0 +1,9 @@
+.body {
+  display:flex;
+  justify-content: center;
+}
+@media (max-width:503px){
+  .body {
+    display:block;
+  }
+}

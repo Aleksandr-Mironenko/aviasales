@@ -1,0 +1,152 @@
+$ticket-width: 100%;
+$ticket-height: 184px;
+$ticket-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+$ticket-background: rgb(255, 255, 255);
+$ticket-padding: 20px;
+
+$upper-height: 36px;
+
+$once-border-radius: 5px;
+$once-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+$once-margin-bottom: 20px;
+$once-background-color: #fff;
+
+$logo-width: 110px;
+$logo-height: 38px;
+
+$where-back-height: 40px;
+$where-back-margin: 10px 0;
+
+$route-max-width: 140px;
+$route-min-width: 100px;
+
+$lenght-max-width: 140px;
+$lenght-min-width: 60px;
+
+$stops-max-width: 140px;
+$stops-min-width: 100px;
+
+$price-font-size: 24px;
+$price-font-weight: 600;
+$price-color: rgb(33, 150, 243);
+
+.ticket {
+  width: $ticket-width;
+  height: $ticket-height;
+  box-shadow: $ticket-box-shadow;
+  background: $ticket-background;
+  padding: $ticket-padding;
+  box-sizing: border-box;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: $upper-height;
+}
+
+.once {
+  border-radius: $once-border-radius;
+  box-shadow: $once-box-shadow;
+  margin-bottom: $once-margin-bottom;
+  background-color: $once-background-color;
+}
+
+.logo {
+  width: $logo-width;
+  height: $logo-height;
+  box-sizing: content-box;
+  margin: 0;
+}
+
+.where, .back {
+  height: $where-back-height;
+  margin: $where-back-margin;
+  display: flex;
+  justify-content: space-between;
+  align-content: start;
+  align-items: center;
+}
+
+.route, .lenght, .stops {
+  max-width: $route-max-width;
+}
+
+.route {
+  min-width: $route-min-width;
+}
+
+.lenght {
+  min-width: $lenght-min-width;
+}
+
+.stops {
+  min-width: $stops-min-width;
+}
+
+.price {
+  font-size: $price-font-size;
+  font-weight: $price-font-weight;
+  color: $price-color;
+}
+// .ticket {
+//   width: 100%;
+//   height: 184px;
+//   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+//   background: rgb(255, 255, 255);
+//   padding: 20px;
+//   box-sizing: border-box;
+// }
+
+// .upper {
+//   display: flex;
+//   justify-content: space-between;
+//   align-content: center;
+//   align-items: center;
+//   height: 36px;
+  
+// }
+//  .once  {
+//   border-radius: 5px;
+//   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1); 
+//   margin-bottom:  20px;
+//   background-color: #fff;
+//  }
+
+//  .logo{
+//   width: 110px;
+//   height: 38px;
+//   box-sizing: content-box;
+//   margin:0
+//  }
+
+// .where, .back {
+//   height: 40px;
+//   margin:10px 0 ;
+//   display: flex;
+//   justify-content: space-between;
+//   align-content: start;
+//   align-items: center;
+// }
+ 
+// .route, .lenght, .stops {
+//   max-width: 140px;
+// }
+
+// .route{
+//   min-width: 100px;
+// }
+// .lenght{
+//   min-width: 60px;
+// }
+// .stops{
+//   min-width: 100px;
+// }
+
+// .price{
+//   font-size: 24px;
+//   font-weight: 600;
+//   color: rgb(33, 150, 243)
+// }

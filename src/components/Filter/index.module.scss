@@ -1,0 +1,224 @@
+$border-radius: 5px;
+$box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+$background-color: rgb(255, 255, 255);
+$font-size-small: 12px;
+$font-size-medium: 13px;
+$padding: 20px;
+$hover-background-color: #F1FCFF;
+$checkbox-size: 20px;
+$checkbox-border-color: rgb(154, 187, 206);
+$checkbox-checked-color: rgb(33, 150, 243);
+$checkbox-checked-content: '✓';
+$media-max-width: 717px;
+
+.filter {
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  background: $background-color;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  height: 255px;
+  max-width: 232px;
+  min-width: 132px;  
+}
+
+.filterP {
+  padding: $padding $padding $padding 0;
+  font-size: $font-size-small; 
+  padding-left: $padding;
+}
+ 
+.choises {
+  display: block;
+  width: 100%;
+} 
+
+.choise {
+  width: 100%;
+  min-width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.choise:hover {
+  background-color: $hover-background-color;
+}
+
+.inputText {
+  margin-left: 10px;
+  font-size: $font-size-medium;
+}
+
+input[type="checkbox"] {
+  margin-left: $padding;
+  appearance: none;  
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  width: $checkbox-size;  
+  height: $checkbox-size;  
+  border: 2px solid $checkbox-border-color;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: relative;
+  padding: auto;
+}
+
+input[type="checkbox"]:checked {
+  border-color: $checkbox-checked-color;  
+}
+
+input[type="checkbox"]:checked::before {
+  content: $checkbox-checked-content; 
+  width: 18px; 
+  height: 18px;
+  display: block;
+  color: $checkbox-checked-color;
+  text-align: center;
+  border: 2px solid $checkbox-checked-color;
+  position: absolute; 
+  top: -1px;
+  left: -1px;
+  box-sizing: border-box; 
+  font-size: $font-size-small;
+}
+
+@media (max-width: $media-max-width) {
+  .filter {
+    max-height: 272px;
+    max-width: 100%;
+    min-width: 132px; 
+    margin: 0 0 20px 0;
+  }
+
+  .choises {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  } 
+}
+
+@media (min-width: $media-max-width) {
+  .filter {
+    min-height: 252px;
+    max-height: 272px;
+    max-width: 232px;
+    min-width: 132px;
+    margin: 0;
+  }
+  
+  .choises {
+    display: block;
+    width: 100%;
+  } 
+}
+// .filter {
+//   border-radius: 5px;
+//   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+//   background: rgb(255, 255, 255);
+//   display: flex;
+//   flex-direction: column;
+//   flex-wrap: nowrap;
+//   align-items: flex-start;
+//   height: 255px;
+//   max-width: 232px;
+//   min-width: 132px;  
+// }
+
+// .filter-p {
+//   padding: 20px 20px 20px 0;
+//   font-size: 12px; 
+//   padding-left: 20px;
+// }
+ 
+// .choises{
+//   display: box;
+//   width:100%;
+// } 
+
+// .choise {
+//   width: 100% ;
+//   min-width: 150px;
+//   height: 40px;
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+// }
+
+// .choise:hover {
+//   background-color: #F1FCFF
+// }
+
+// .inputText{
+//   margin-left: 10px;
+//   font-size: 13px;
+// }
+
+// input[type="checkbox"] {
+//   margin-left: 20px;
+//   appearance: none;  
+//   -webkit-appearance: none; 
+//   -moz-appearance: none; 
+//   width: 20px;  
+//   height: 20px;  
+//   border: 2px solid rgb(154, 187, 206);
+//   border-radius: 2px;
+//   border : 20px 20px; 
+//   box-sizing: border-box;
+//   position: relative;
+//   padding: auto;
+// }
+
+// input[type="checkbox"]:checked {
+//   border-color: rgb(33, 150, 243);  
+// }
+
+// input[type="checkbox"]:checked::before {
+//   content: '✓'; 
+//   width: 18px; 
+//   height: 18px;
+//   display: block;
+//   color: rgb(33, 150, 243);
+//   text-align: center;
+//   border: 2px solid rgb(33, 150, 243);
+//   position: absolute; 
+//   top: -1px;
+//   left: -1px;
+//   box-sizing: border-box; 
+//   font-size: 12px;
+// }
+
+// @media (max-width:717px){
+// .filter{
+//   max-height: 272px;
+//   max-width: 100%;
+//   min-width: 132px; 
+//   margin: 0 0 20px 0;
+// }
+
+// .choises{
+//   display: flex;
+//   width:100%;
+//   flex-direction: column;
+//   flex-wrap: wrap;
+// } 
+// }
+
+// @media (min-width:717px){//716
+//   .filter{
+//     min-height: 252px;
+//     max-height: 272px;
+//     max-width: 232px;
+//     min-width: 132px;
+//     margin: 0  ;
+//   }
+  
+//   .choises{
+//     display: box;
+//     width:100%;
+//   } 
+// }
