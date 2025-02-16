@@ -6,7 +6,7 @@ import actions from '../actions'
 import Offline from '../Offline'
 
 const AppData = ({ store, getId, listenerOnline, listenerOffline }) => {
-  const { filterTickets, offline, amountRenderTicket, all, transfer0, transfer1, transfer2, transfer3, chooseTabs} = store //
+  const { filterTickets, offline, amountRenderTicket, all, transfer0, transfer1, transfer2, transfer3} = store //, chooseTabs
   useEffect(() => {
     getId()
   }, [all, transfer0, transfer1, transfer2, transfer3]) //, chooseTabs
